@@ -15,6 +15,7 @@ import ProjectImg1 from "../assets/projects/car-rental.jpg";
 import ProjectImg2 from "../assets/projects/restaurant.jpg";
 import ProjectImg3 from "../assets/projects/ecommerce.jpg";
 import ProjectImg4 from "../assets/projects/travel-website.jpg";
+// import Contact from "./Contact/Contact.jsx";
 
 
 const ProjectData = [
@@ -58,13 +59,17 @@ function MyBook(props) {
             </Page>
             <Page number={2}><FirstPage/>  </Page>
             <Page number={3}><Skills/></Page>
+            {/* <Page number={3}><Skills/></Page> */}
             <Page number={4}> <Services/></Page>
             <Page number={5}> <About/></Page>
             <Page number={6}> <Projects  ProjectData={ProjectData}/></Page>
             <Page number={7}> <Projects  ProjectData={ProjectData2}/></Page>
-            <Page number={8}>
+            {/* <Page number={8}><Contact/> </Page> */}
+            {/* <Page number={9}><Contact/> </Page> */}
+            <Page number={10}>
         <Cover coverImg={EndImg} title="Thanks" />
       </Page>
+      
         </HTMLFlipBook>
     );
 }
